@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Panel de Gestión de Alumnos</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .menu { margin: 20px; }
+        .menu a { display: block; margin: 10px 0; font-size: 18px; text-decoration: none; color: #000; }
+        .menu a:hover { color: blue; }
+        iframe { border: 1px solid #000; width: 90%; height: 500px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Panel de Gestión de Alumnos</h1>
+
+    <div class="menu">
+        <a href="consulta_alumnos.php" target="contenido">Consultar Alumnos</a>
+        <a href="inserta_alumnos.html" target="contenido">Insertar Alumno</a>
+        <a href="borrar_alumnos.html" target="contenido">Borrar Alumno</a>
+        <a href="actualizar_alumnos.php" target="contenido">Actualizar Alumno</a>
+    </div>
+
+    <!-- Iframe para mostrar el contenido seleccionado -->
+    <iframe name="contenido" src="consulta_alumnos.php"></iframe>
+</body>
+</html>
